@@ -138,8 +138,9 @@ Questions:
 - Was the attack sucessful?
 - Attacker source IP
 
-[Hint1](https://github.com/chboeh/MsftEntropy/blob/master/Training/Hints/CTF_Hint1.md)
-[Hint2](https://github.com/chboeh/MsftEntropy/blob/master/Training/Hints/CTF_Hint2.md)
+[Hint1](https://github.com/chboeh/MsftEntropy/blob/master/Training/Hints/CTF_Hint1.md)  
+[Hint2](https://github.com/chboeh/MsftEntropy/blob/master/Training/Hints/CTF_Hint2.md)  
+[Hint3](https://github.com/chboeh/MsftEntropy/blob/master/Training/Hints/CTF_Hint3.md)
 
 [Anwser](https://github.com/chboeh/MsftEntropy/blob/master/Training/Answers/KQLInvestigation_7.md)
 
