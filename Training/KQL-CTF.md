@@ -13,12 +13,12 @@ Basic Operators     | Advance Operators
 --------- | ---------  
  search   | ago
  where    | sort
- take     | extract
+ take     | translate
  count    | iif
  summarize | parse_json
- extend |
- project |
- distinct |
+ extend | todatetime
+ project | tostring
+ distinct | split
 
 ## Goal of this training:
 
@@ -45,6 +45,9 @@ It’s been some time since you’ve use Microsoft’s Azure Log Analytics, you�
 #### Refresher Course
 
 1. Start by pulling everything from "ProtectionStatus" table from the AntiMalware Catagory 
+
+[Anwser](Training\Answers\KQLRefresher_1.md)
+
 ~~~
 ProtectionStatus
 ~~~
@@ -68,28 +71,8 @@ ProtectionStatus
 2. Remove your limiters; Within the "ProtectionStatus" table, search for "Contoso" then "Cotoso*"
 > TIP: this can be done in more than one way
 
-```
-search in (ProtectionStatus) "Contoso"
-
-search in (ProtectionStatus) "Contoso*"
-```
-or
-```
-ProtectionStatus
-| search "Contoso"
-
-ProtectionStatus
-| search "Contoso*"
-
-```
 3. You've noticed the run button is not working, how else can you run a query with just your keyboard?
-~~~
-SHIFT+ENTER
-~~~
-> Run a query by clicking the Run button or pressing Shift+Enter. Consider the following details which determine the code that will be run and the data that's returned:
-> - Line breaks: A single break makes your query clearer. Multiple line breaks split it into separate queries.
-> - Cursor: Place your cursor somewhere inside the query to execute it. The current query is considered to be the code up until a blank line is found.
-> - Time range - A time range of last 24 hours is set by default. To use a different range, use the time-picker or add an explicit time range filter to your query.
+
 
 4. Understanding the schema
 
