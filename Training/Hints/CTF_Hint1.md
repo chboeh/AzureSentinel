@@ -1,4 +1,4 @@
-Getting started you'll need to look through the raw data you've been given to parser this out into a proper format.
+Getting started you'll need to look through the raw data you've been given to parse this out into a proper format.
 Based on the previous query : 
 ~~~~
 SecurityDetection
