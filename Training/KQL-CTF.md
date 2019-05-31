@@ -124,7 +124,7 @@ Questions:
 
  [Anwser](Answers/KQLInvestigation_5_B.md)
 
- 3. Can you export the data to PowerBI? Find out how
+ 3. Can you export the data to PowerBI?
 
  [Answer](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/powerbi#export-query)
 
