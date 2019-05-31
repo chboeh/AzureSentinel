@@ -38,7 +38,7 @@ The different ways that you will use queries in Azure Monitor include the follow
 - **PowerShell.** You can run a PowerShell script from a command line or an Azure Automation runbook that uses [Get-AzOperationalInsightsSearchResults](/powershell/module/az.operationalinsights/get-azoperationalinsightssearchresult) to retrieve log data from Azure Monitor.  This cmdlet requires a query to determine the data to retrieve.
 - **Azure Monitor Logs API.**  The [Azure Monitor Logs API](../platform/alerts-overview.md) allows any REST API client to retrieve log data from the workspace.  The API request includes a query that is run against Azure Monitor to determine the data to retrieve.
 
-![Log searches](https://github.com/chboeh/MsftEntropy/blob/master/Training/Pictures/queries-overview.png)
+![Log searches](Pictures/queries-overview.png)
 
 ### Control Commands 
 Control commands are requests to Kusto to process and potentially modify data or metadata. For example, the following control command creates a new Kusto table with two columns, Level and Text:
@@ -57,7 +57,7 @@ When you build a query, you start by determining which tables have the data that
 
 While Application Insights stores application data such as requests, exceptions, traces, and usage in Azure Monitor logs, this data is stored in a different partition than the other log data. You use the same query language to access this data but must use the Application Insights console or Application Insights REST API to access it. You can use cross-resources queries to combine Application Insights data with other log data in Azure Monitor.
 
-![Orgnization-KQL](https://github.com/chboeh/MsftEntropy/blob/master/Training/Pictures/queries-tables.png)
+![Orgnization-KQL](Pictures/queries-tables.png)
 
 
 
