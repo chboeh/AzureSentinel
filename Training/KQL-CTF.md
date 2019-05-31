@@ -46,7 +46,7 @@ It’s been some time since you’ve used Microsoft’s Azure Log Analytics, you
 
 1. Start by pulling everything from "ProtectionStatus" table from the AntiMalware Catagory 
 
-[Anwser](https://github.com/chboeh/MsftEntropy/blob/master/Training/Answers/KQLRefresher_1.md)
+[Anwser](Answers\KQLInvestigation_1.md)
 
 2. The results are a little over whelming, take it down to a sample set of data. We're going to take it down to 10 
 
@@ -103,7 +103,7 @@ Based on the "case" you’ve been provided, you know the following facts
 
 [Hint 1](https://docs.microsoft.com/en-us/azure/kusto/query/agofunction)    
 [Hint 2](https://docs.microsoft.com/en-us/azure/kusto/query/countoperator)  
-[Anwser](Training\Answers\KQLInvestigation_2.md)
+[Anwser](https://github.com/chboeh/MsftEntropy/blob/master/Training/Answers/KQLInvestigation_3.md)
 
 4. While this amount does seem high, it doesn't appear abnormal for you. You're wanting to see how many tables have "ContosoAppSrv1" within them. Serach within all tables for "ConotosAppServ1" to create a list. When searching use within 30 mins.
 
@@ -149,7 +149,7 @@ Questions:
 [Hint2](https://github.com/chboeh/MsftEntropy/blob/master/Training/Hints/CTF_Hint2.md)  
 [Hint3](https://github.com/chboeh/MsftEntropy/blob/master/Training/Hints/CTF_Hint3.md) - Hint 2 Answer  
 [Hint4](https://github.com/chboeh/MsftEntropy/blob/master/Training/Hints/CTF_Hint4.md) - Hint 3 Answer  
-[Hint5](https://github.com/chboeh/MsftEntropy/blob/master/Training/Hints/CTF_Hint5.md) - Hint 4 Answer  
+[Hint5](https://github.com/chboeh/MsftEntropy/blob/master/Training/Hints/CTF_Hint5.md) - Hint 4 Answer
 
 [Anwser](https://github.com/chboeh/MsftEntropy/blob/master/Training/Answers/KQLInvestigation_7.md)
 
