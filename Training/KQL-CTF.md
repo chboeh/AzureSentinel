@@ -2,9 +2,9 @@
 
 ## Getting prepared for the exercise
 
-[ ] Open up the [Azure Log Analytics](http://aka.ms/LAdemo) demo site
+- [ ] Open up the [Azure Log Analytics](http://aka.ms/LAdemo) demo site
 
-[ ] Open up the [Kusto Query Refence Guide](https://docs.microsoft.com/en-us/azure/kusto/query/)
+- [ ] Open up the [Kusto Query Refence Guide](https://docs.microsoft.com/en-us/azure/kusto/query/)
 
 
 Operators  we're going to be using
