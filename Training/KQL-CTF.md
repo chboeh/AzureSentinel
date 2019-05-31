@@ -46,7 +46,7 @@ It’s been some time since you’ve used Microsoft’s Azure Log Analytics, you
 
 1. Start by pulling everything from "ProtectionStatus" table from the AntiMalware Catagory 
 
-[Anwser](Answers\KQLInvestigation_1.md)
+[Anwser](Answers/KQLInvestigation_1.md)
 
 2. The results are a little over whelming, take it down to a sample set of data. We're going to take it down to 10 
 
