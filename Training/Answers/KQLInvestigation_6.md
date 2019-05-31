@@ -1,6 +1,7 @@
 ## Answers
 
-~~~
-SecurityEvent
-| limit 1000
-~~~
+~~~~
+SecurityDetection
+| where TimeGenerated > ago(31d) 
+| where Computer == "ContosoAppSrv1"
+~~~~

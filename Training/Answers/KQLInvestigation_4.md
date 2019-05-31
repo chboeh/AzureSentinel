@@ -1,6 +1,7 @@
 ## Answers
 
 ~~~
-SecurityEvent
-| limit 1000
+search "ContosoAppSrv1"
+| where TimeGenerated > ago(30m) 
+| distinct $table
 ~~~

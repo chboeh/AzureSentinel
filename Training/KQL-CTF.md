@@ -76,77 +76,55 @@ It’s been some time since you’ve used Microsoft’s Azure Log Analytics, you
 
 Based on the "case" you’ve been provided, you know the following facts
 -	You’re looking for “ContosoAppSrv1” within your Log Analytics workspace
--	Your boss is concerned something could have been missed within the data, this is an important web service the company uses and it's worth our time to confirm everything is ok.
+-	Your boss is concerned about the increase of events from one of our high-impact web servers within the company
 -	You’ve been informed that we’ve been getting a large volume of event data from this server based on a reporting tool, although it’s not clear exactly how much.
     >	*Personal Note* - Might be best to capture some data to give the appropriate team information on why we’re getting so many events.
--	If we do discover something, we need to report it directly to management in a clean fashion. They’re only wanting to see the following data, ServerName, Users impacted, Services Impact, Event window(Start and End), Total time of the event, Attacker information.
+-	If we do discover something, we need to report it directly to management in a clean fashion. They’re only wanting to see the following data, ServerName, Users impacted, Services Impact, Event window(Start and End), Total time of the event, Attacker information. You were scolded the last time you presented raw data.
 
 
 1. Knowing from experience, we're going to start pulling everything from "SecurityEvent", then limit it to 1000.
 
-[Hint 1](https://docs.microsoft.com/en-us/azure/kusto/query/limitoperator)
-
-
-
+[Hint 1](https://docs.microsoft.com/en-us/azure/kusto/query/limitoperator)  
 [Anwser](https://github.com/chboeh/MsftEntropy/blob/master/Training/Answers/KQLInvestigation_1.md)
 
 2. You've been asked to look into the computer name "ContosoAppSrv1" within the SecurityEvent table; keep the limit for a faster result.
 
-[Hint 1](https://docs.microsoft.com/en-us/azure/kusto/query/whereoperator)
+[Hint 1](https://docs.microsoft.com/en-us/azure/kusto/query/whereoperator)  
+[Anwser](https://github.com/chboeh/MsftEntropy/blob/master/Training/Answers/KQLInvestigation_2.md)
 
-~~~
- SecurityEvent
-| limit 1000
-| where Computer == "ContosoAppSrv1" 
-~~~
 3. Remove the limit; Find the amount of events "ContosoAppServ1" has generated within the past 24 hours; within the SecurityEvent table.
 
 > Number of results: Results are limited to maximum of 10,000 records.
 
-[Hint 1](https://docs.microsoft.com/en-us/azure/kusto/query/agofunction)
-
-[Hint 2](https://docs.microsoft.com/en-us/azure/kusto/query/countoperator)
-
-~~~
-SecurityEvent 
-| where Computer == "ContosoAppSrv1"
-| where TimeGenerated > ago(24h) 
-| count 
-~~~
-> Should be around 27,000+
+[Hint 1](https://docs.microsoft.com/en-us/azure/kusto/query/agofunction)    
+[Hint 2](https://docs.microsoft.com/en-us/azure/kusto/query/countoperator)  
+[Anwser](https://github.com/chboeh/MsftEntropy/blob/master/Training/Answers/KQLInvestigation_3.md)
 
 4. While investigating you're wanting to see how many tables have "ContosoAppSrv1" within them. Serach within all tables for "ConotosAppServ1" to create a list. When searching use within 30 mins.
 
-[Hint 1](https://docs.microsoft.com/en-us/azure/kusto/query/distinctoperator)
-~~~
-search "ContosoAppSrv1"
-| where TimeGenerated > ago(30m) 
-| distinct $table
-~~~
+[Hint 1](https://docs.microsoft.com/en-us/azure/kusto/query/distinctoperator)   
+[Anwser](https://github.com/chboeh/MsftEntropy/blob/master/Training/Answers/KQLInvestigation_4.md)
+
 5. After seeing the activity across so many tables, you're wanting to present a chart to the infrastructure team. Create a pie chart showing the traffic over the past month with all event tables, goal is to summarize them by count per table.
 
-[Hint 1](https://docs.microsoft.com/en-us/azure/kusto/query/summarizeoperator)
-
-~~~
-search "ContosoAppSrv1" 
-| where TimeGenerated > ago(31d) 
-| summarize count() by $table 
-~~~
+[Hint 1](https://docs.microsoft.com/en-us/azure/kusto/query/summarizeoperator)  
+[Anwser](https://github.com/chboeh/MsftEntropy/blob/master/Training/Answers/KQLInvestigation_5.md)
 
 Questions: 
  1. Which tables are on the top 3 count list?
-> Perf, WindowsFirewall, WireData
+
+[Anwser](https://github.com/chboeh/MsftEntropy/blob/master/Training/Answers/KQLInvestigation_5_A.md)
+
  2. Which tables are on the bottom 3 count list?
-> SecurityDetection,UpdateSummary,SecurityAlert
+
+ [Anwser](https://github.com/chboeh/MsftEntropy/blob/master/Training/Answers/KQLInvestigation_5_B.md)
+
+>Need to know answer above to proceed forward
 
 6. From your discovery of creating the chart, you noticed a small amount of detections. Investigate into the detections of the "ContosoAppSrv1"
 >Note:You'll need to keep the 1 month timewindow
 
-~~~~
-SecurityDetection
-| where TimeGenerated > ago(31d) 
-| where Computer == "ContosoAppSrv1"
-~~~~
+[Anwser](https://github.com/chboeh/MsftEntropy/blob/master/Training/Answers/KQLInvestigation_6.md)
 
 7. After careful investigaiton you've discovered a user login attempt has occoured. Thankfully it failed.  You're needing to report this to your manager, but the data is a little over overkill. Create the following fields and clean up the data for easier understanding:
 
@@ -154,8 +132,8 @@ SecurityDetection
 - Impacted account
 - Start of the attack time
 - End of the attack time
-- Total time duration
-- Attack Status, yes or no
+- Total time duration of the attack
+- Was the attack sucessful?
 - Attacker source IP
 
 [Hint 1](https://docs.microsoft.com/en-us/azure/kusto/query/projectoperator)  
@@ -164,17 +142,4 @@ SecurityDetection
 [Hint 4](https://docs.microsoft.com/en-us/azure/kusto/query/todatetimefunction)  
 [Hint 5](https://docs.microsoft.com/en-us/azure/kusto/query/tostringfunction)  
 
-~~~~
-SecurityDetection
-| where TimeGenerated > ago(31d) 
-| where Computer == "ContosoAppSrv1"
-| extend end_time_key = todatetime(translate("/", "-", tostring(parse_json(ExtendedProperties).["Activity end time (UTC)"])))
-| extend start_time_key = todatetime(translate("/", "-", tostring(parse_json(ExtendedProperties).["Activity start time (UTC)"])))
-| project Computer,
-          AttackStatus = iff(parse_json(ExtendedProperties).["Was RDP session initiated"] == "Yes","Infiltrated" ,"Safe" ) ,
-          AttackedUserAccount=parse_json(ExtendedProperties).["Existing accounts used but failed to sign in to host"],
-          Attack_StartTime=start_time_key ,
-          Attack_EndTime=end_time_key ,
-          Attackers_IPAddress=tostring(split(parse_json(ExtendedProperties).["Attacker source IP"],":").[1])
-| extend Attack_Duration = Attack_EndTime - Attack_StartTime      
-~~~~
+[Anwser](https://github.com/chboeh/MsftEntropy/blob/master/Training/Answers/KQLInvestigation_7.md)
