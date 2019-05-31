@@ -171,6 +171,7 @@ SecurityDetection
 [Hint3](https://docs.microsoft.com/en-us/azure/kusto/query/translatefunction)   
 [Hint4](https://docs.microsoft.com/en-us/azure/kusto/query/todatetimefunction)  
 [Hint5](https://docs.microsoft.com/en-us/azure/kusto/query/tostringfunction)  
+
 ~~~~
 SecurityDetection
 | where TimeGenerated > ago(31d) 
@@ -184,21 +185,4 @@ SecurityDetection
           Attack_EndTime=end_time_key ,
           Attackers_IPAddress=tostring(split(parse_json(ExtendedProperties).["Attacker source IP"],":").[1])
 | extend Attack_Duration = Attack_EndTime - Attack_StartTime      
-
- 
-
-
-          
-
- 
-
-
-          
 ~~~~
-
-
- 
-
-
-
-
