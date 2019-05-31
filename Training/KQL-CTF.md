@@ -46,7 +46,7 @@ It’s been some time since you’ve use Microsoft’s Azure Log Analytics, you�
 
 1. Start by pulling everything from "ProtectionStatus" table from the AntiMalware Catagory 
 
-[Anwser](Training\Answers\KQLRefresher_1.md)
+[Anwser](https://github.com/chboeh/MsftEntropy/blob/master/Training/Answers/KQLRefresher_1.md)
 
 ~~~
 ProtectionStatus
