@@ -72,6 +72,8 @@ It’s been some time since you’ve used Microsoft’s Azure Log Analytics, you
 
 > INFO: Examine the scheme. Specifically look into the "Security" category that has been provided, as you'll notice there are mulitlpe tables ( e.g. CommonSecurityLog, SecurityEvent, SecurityAlert ). In each table, data is organized in columns with different data types as indicated by icons next to the column name. For example, the Event table shown in the screenshot contains columns such as Computer which is text, EventCategory which is a number, and TimeGenerated which is date/time.
 
+[Anwser](https://github.com/chboeh/MsftEntropy/blob/master/Training/Answers/KQLRefresher_6.md)
+
 #### Starting the Investigation
 
 Based on the "case" you’ve been provided, you know the following facts
@@ -82,12 +84,12 @@ Based on the "case" you’ve been provided, you know the following facts
 -	If we do discover something, we need to report it directly to management in a clean fashion. They’re only wanting to see the following data, ServerName, Users impacted, Services Impact, Event window(Start and End), Total time of the event, Attacker information. You were scolded the last time you presented raw data.
 
 
-1. Knowing from experience, we're going to start pulling everything from "SecurityEvent", then limit it to 1000.
+1. Knowing from experience, we're going to start pulling everything from "SecurityEvent", then limit it to 1000. Pull this query to see the current data before we filter further.
 
 [Hint 1](https://docs.microsoft.com/en-us/azure/kusto/query/limitoperator)  
 [Anwser](https://github.com/chboeh/MsftEntropy/blob/master/Training/Answers/KQLInvestigation_1.md)
 
-2. You've been asked to look into the computer name "ContosoAppSrv1" within the SecurityEvent table; keep the limit for a faster result.
+2. You've been asked to look into the computer name "ContosoAppSrv1" within the SecurityEvent table; keep the limit for a faster result. 
 
 [Hint 1](https://docs.microsoft.com/en-us/azure/kusto/query/whereoperator)  
 [Anwser](https://github.com/chboeh/MsftEntropy/blob/master/Training/Answers/KQLInvestigation_2.md)
@@ -100,7 +102,7 @@ Based on the "case" you’ve been provided, you know the following facts
 [Hint 2](https://docs.microsoft.com/en-us/azure/kusto/query/countoperator)  
 [Anwser](https://github.com/chboeh/MsftEntropy/blob/master/Training/Answers/KQLInvestigation_3.md)
 
-4. While investigating you're wanting to see how many tables have "ContosoAppSrv1" within them. Serach within all tables for "ConotosAppServ1" to create a list. When searching use within 30 mins.
+4. While this amount does seem high, it doesn't appear abnormal for you. You're wanting to see how many tables have "ContosoAppSrv1" within them. Serach within all tables for "ConotosAppServ1" to create a list. When searching use within 30 mins.
 
 [Hint 1](https://docs.microsoft.com/en-us/azure/kusto/query/distinctoperator)   
 [Anwser](https://github.com/chboeh/MsftEntropy/blob/master/Training/Answers/KQLInvestigation_4.md)
@@ -143,3 +145,5 @@ Questions:
 [Hint 5](https://docs.microsoft.com/en-us/azure/kusto/query/tostringfunction)  
 
 [Anwser](https://github.com/chboeh/MsftEntropy/blob/master/Training/Answers/KQLInvestigation_7.md)
+
+8. Woo! Hard work paid off, don't forget to save your query for future use. Don't want to have to build that again. Export the results into CSV format and save for future use.
