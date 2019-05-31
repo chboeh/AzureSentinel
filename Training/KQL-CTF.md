@@ -138,11 +138,7 @@ Questions:
 - Was the attack sucessful?
 - Attacker source IP
 
-[Hint 1](https://docs.microsoft.com/en-us/azure/kusto/query/projectoperator)  
-[Hint 2](https://docs.microsoft.com/en-us/azure/kusto/query/parsejsonfunction)   
-[Hint 3](https://docs.microsoft.com/en-us/azure/kusto/query/translatefunction)   
-[Hint 4](https://docs.microsoft.com/en-us/azure/kusto/query/todatetimefunction)  
-[Hint 5](https://docs.microsoft.com/en-us/azure/kusto/query/tostringfunction)  
+[]  
 
 [Anwser](https://github.com/chboeh/MsftEntropy/blob/master/Training/Answers/KQLInvestigation_7.md)
 
