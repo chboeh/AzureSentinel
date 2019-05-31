@@ -8,4 +8,4 @@ SHIFT+ENTER
 > - Cursor: Place your cursor somewhere inside the query to execute it. The current query is considered to be the code up until a blank line is found.
 > - Time range - A time range of last 24 hours is set by default. To use a different range, use the time-picker or add an explicit time range filter to your query.
 
-![Answer](https://github.com/chboeh/MsftEntropy/blob/master/Training/Pictures/KQLRefresher_5.png)
+![Answer](Pictures/KQLRefresher_5.png)

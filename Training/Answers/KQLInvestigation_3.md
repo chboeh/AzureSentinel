@@ -9,4 +9,4 @@ SecurityEvent
 ~~~
 > Should be around 27,000+
 
-![Answer](https://github.com/chboeh/MsftEntropy/blob/master/Training/Pictures/KQLInvestigation_3.png)
+![Answer](Pictures/KQLInvestigation_3.png)

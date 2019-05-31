@@ -6,4 +6,4 @@ search "ContosoAppSrv1"
 | where TimeGenerated > ago(31d) 
 | summarize count() by $table 
 ~~~
-![Answer](https://github.com/chboeh/MsftEntropy/blob/master/Training/Pictures/KQLInvestigation_5.png)
+![Answer](Pictures/KQLInvestigation_5.png)

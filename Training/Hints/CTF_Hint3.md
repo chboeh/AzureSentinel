@@ -12,4 +12,4 @@ SecurityDetection
 | extend CorrectMachine = iif(Computer == "ContosoAppSrv1","The Correct Server", "The Wrong Server" )
 ~~~
 
-![Hint](https://github.com/chboeh/MsftEntropy/blob/master/Training/Pictures/Hint_Data5.png)
+![Hint](Pictures/Hint_Data5.png)

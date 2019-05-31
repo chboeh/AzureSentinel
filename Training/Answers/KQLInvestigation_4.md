@@ -5,4 +5,4 @@ search "ContosoAppSrv1"
 | where TimeGenerated > ago(30m) 
 | distinct $table
 ~~~
-![Answer](https://github.com/chboeh/MsftEntropy/blob/master/Training/Pictures/KQLInvestigation_4.png)
+![Answer](Pictures/KQLInvestigation_4.png)

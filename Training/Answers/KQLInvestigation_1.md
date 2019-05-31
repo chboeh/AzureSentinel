@@ -4,4 +4,4 @@
 SecurityEvent
 | limit 1000
 ~~~
-![Answer](https://github.com/chboeh/MsftEntropy/blob/master/Training/Pictures/KQLInvestigation_1.png)
+![Answer](Pictures/KQLInvestigation_1.png)

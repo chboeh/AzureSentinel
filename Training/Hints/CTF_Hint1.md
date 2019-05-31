@@ -8,7 +8,7 @@ SecurityDetection
 
 You should see the following data:
 
-![Hint](https://github.com/chboeh/MsftEntropy/blob/master/Training/Pictures/Hint_Data1.png)
+![Hint](Pictures/Hint_Data1.png)
 
 
 In order to format the data you'll need to use the ["Project" operator](https://docs.microsoft.com/en-us/azure/kusto/query/projectoperator)
@@ -27,4 +27,4 @@ SecurityDetection
           RemediationSteps         
 
 ~~~~
-![Hint](https://github.com/chboeh/MsftEntropy/blob/master/Training/Pictures/Hint_Data2.png)
+![Hint](Pictures/Hint_Data2.png)

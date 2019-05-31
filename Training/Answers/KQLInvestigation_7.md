@@ -16,4 +16,4 @@ SecurityDetection
           Attackers_IPAddress=tostring(split(parse_json(ExtendedProperties).["Attacker source IP"],":").[1])
 | extend Attack_Duration = Attack_EndTime - Attack_StartTime      
 ~~~~
-![Answer](https://github.com/chboeh/MsftEntropy/blob/master/Training/Pictures/KQLInvestigation_7.png)
+![Answer](Pictures/KQLInvestigation_7.png)

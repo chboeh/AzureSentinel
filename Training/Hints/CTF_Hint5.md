@@ -9,4 +9,4 @@ You've collected mostly everything buy this point, just missing two requirements
 
 I'm pretty sure the Attack duation could be solved with an [extend operator](https://docs.microsoft.com/en-us/azure/kusto/query/extendoperator)
 
-The IP Address one is pretty stright forward but i keep getting IP address in the data, i remember reading somewhere [split](https://docs.microsoft.com/en-us/azure/kusto/query/splitfunction) could help me out here.
+The IP Address one is pretty stright forward but i keep getting "IP address:" in the data, i remember reading somewhere [split](https://docs.microsoft.com/en-us/azure/kusto/query/splitfunction) could help me out here.

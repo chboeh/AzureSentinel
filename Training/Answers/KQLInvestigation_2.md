@@ -6,4 +6,4 @@
 | limit 1000
 | where Computer == "ContosoAppSrv1" 
 ~~~
-![Answer](https://github.com/chboeh/MsftEntropy/blob/master/Training/Pictures/KQLInvestigation_2.png)
+![Answer](Pictures/KQLInvestigation_2.png)

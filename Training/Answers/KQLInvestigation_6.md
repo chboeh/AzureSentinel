@@ -6,4 +6,4 @@ SecurityDetection
 | where TimeGenerated > ago(31d) 
 | where Computer == "ContosoAppSrv1"
 ~~~~
-![Answer](https://github.com/chboeh/MsftEntropy/blob/master/Training/Pictures/KQLInvestigation_6.png)
+![Answer](Pictures/KQLInvestigation_6.png)
