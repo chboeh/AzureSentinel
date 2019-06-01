@@ -137,13 +137,13 @@ Questions:
 
 7. After careful investigaiton you've discovered a user login attempt has occoured. Thankfully it failed.  You're needing to report this to your manager, but the data is a little over overkill. Create the following fields and clean up the data for easier understanding:
 
-- Computer Name
-- Impacted account
-- Start of the attack time
-- End of the attack time
-- Total time duration of the attack
-- Was the attack sucessful?
-- Attacker source IP
+- [ ] Computer Name
+- [ ] Impacted account
+- [ ] Start of the attack time
+- [ ] End of the attack time
+- [ ] Total time duration of the attack
+- [ ] Was the attack sucessful?
+- [ ] Attacker source IP
 
 [Hint1](Hints/CTF_Hint1.md)  
 [Hint2](Hints/CTF_Hint2.md)  
