@@ -9,3 +9,5 @@
 
 ### Developing
 
+#### Syslog Training:
+[Rsyslog with Azure Sentinel Walkthough](Training/RSyslog-Walkthrough.md)
