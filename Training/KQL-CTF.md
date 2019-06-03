@@ -46,36 +46,36 @@ It’s been some time since you’ve used Microsoft’s Azure Log Analytics, you
 
 1. Start by pulling everything from "ProtectionStatus" table from the AntiMalware Catagory 
 
-[Anwser](Answers/KQLInvestigation_1.md)
+[Anwser](Answers/KQLRefresher_1.md)
 
 2. The results are a little over whelming, take it down to a sample set of data. We're going to take it down to 10 
 
 [Hint](https://docs.microsoft.com/en-us/azure/kusto/query/takeoperator)  
-[Anwser](Answers/KQLInvestigation_2.md)  
+[Anwser](Answers/KQLRefresher_2.md)  
 
 
 3. You're wanting to make sure you're getting the latest data, add a operator to confirm you're getting the latest generated events.
 
 [Hint](https://docs.microsoft.com/en-us/azure/kusto/query/sortoperator)  
-[Anwser](Answers/KQLInvestigation_3.md)    
+[Anwser](Answers/KQLRefresher_3.md)    
 
 
 4. Remove your limiters; Within the "ProtectionStatus" table, search for "Contoso" then "Cotoso*"
 > TIP: this can be done in more than one way
 
 [Hint](https://docs.microsoft.com/en-us/azure/kusto/query/searchoperator)    
-[Anwser](Answers/KQLInvestigation_4.md)  
+[Anwser](Answers/KQLRefresher_4.md)  
 
 5. You've noticed the run button is not working, how else can you run a query with just your keyboard?
 
-[Anwser](Answers/KQLInvestigation_5.md)  
+[Anwser](Answers/KQLRefresher_5.md)  
 
 
 6. Understanding the schema
 
 > INFO: Examine the scheme. Specifically look into the "Security" category that has been provided, as you'll notice there are mulitlpe tables ( e.g. CommonSecurityLog, SecurityEvent, SecurityAlert ). In each table, data is organized in columns with different data types as indicated by icons next to the column name. For example, the Event table shown in the screenshot contains columns such as Computer which is text, EventCategory which is a number, and TimeGenerated which is date/time.
 
-[Anwser](Answers/KQLInvestigation_6.md)  
+[Anwser](Answers/KQLRefresher_6.md)  
 
 #### Starting the Investigation
 
