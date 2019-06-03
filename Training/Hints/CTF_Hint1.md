@@ -1,4 +1,4 @@
-Getting started you'll need to look through the raw data you've queried; You've been tasked to format this into a proper fomart for presentation purposes and future queries.You'll need to start looking over the data within each event.
+Getting started you'll need to look through the raw data you've queried; You've been tasked to fomart for presentation purposes and future queries.You'll need to start looking over the data within each event.
 Based on the previous query : 
 ~~~~
 SecurityDetection
