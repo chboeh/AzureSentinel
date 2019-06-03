@@ -7,6 +7,6 @@ SecurityEvent
 | where TimeGenerated > ago(24h) 
 | count 
 ~~~
-> Should be around 27,000+
+> Should be around 26,000 - 35,000 (Changes Daily)
 
 ![Answer](Pictures/KQLInvestigation_3.png)
