@@ -31,14 +31,12 @@ It will teach you how to:
 - Create charts
 - Parse Json queries
 - Create your own reports
-- Renaming with "project"
 - Creating custom data sets with "extend"
-- Pulling data  "extract"
 - Save and load queries
 - Export and share queries
 
 ### BackStory
-You’re an Security Analyst that’s been tasked to investigate into a Web Service called “ContosoAppSrv1”, you've been given a "Case" to investigate into a large up-take in volume on this server. Nothing is being alerted based on the security tools your team uses on a daily basis, but your manager feels like it's worth investigating into.
+You’re an Security Analyst that’s been tasked to investigate into a Web Service on “ContosoAppSrv1”, you've been given a "Case" to investigate into a large up-take in event volume. Your standard security tools hasn't seen anything to be alarmed about, but your manager feels like it's worth investigating into.
 
 It’s been some time since you’ve used Microsoft’s Azure Log Analytics, you’re thinking you should refresh yourself before investigating.
 
@@ -154,3 +152,7 @@ Questions:
 [Anwser](Answers/KQLInvestigation_7.md)
 
 8. Woo! Hard work paid off, don't forget to save your query for future use. Don't want to have to build that again. Export the results into CSV format and save for future use.
+
+>Only visuals are possible for #8
+
+[Anwser](Answers/KQLInvestigation_8.md)
