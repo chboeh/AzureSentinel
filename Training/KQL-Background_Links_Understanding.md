@@ -9,6 +9,14 @@ Kusto offers excellent data ingestion and query performance by "sacrificing" the
 
 As a Big Data service, Kusto handles structured, semi-structured (e.g. JSON-like nested types), and unstructured (free-text) data equally well.
 
+> Fun Fact:
+> - Kusto has the ability to run queries across terabytes of data in seconds
+> - An in-query render functionality which allows users to quickly transform their data into pie charts, time charts, and many other   visualizations.
+
+
+
+
+
 ## Interacting with Kusto
 
 The main way for users to interact with Kusto is by using one of the many client tools available for Kusto. While SQL queries to Kusto are supported, the primary means of interaction with Kusto is through the use of the Kusto query language to send data queries, and through the use of control commands to manage Kusto entities, discover metadata, etc. Both queries and control commands are basically short textual "programs".
