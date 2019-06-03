@@ -1,7 +1,7 @@
 # Investigating an issue with Kusto Query Language
 
 ## Getting prepared for the exercise
-> TIP: Right click and open all link in a new tab
+> TIP: Right click and open links in a new tab
 
 - [ ] Open up the [Azure Log Analytics](http://aka.ms/LAdemo) demo site
 
