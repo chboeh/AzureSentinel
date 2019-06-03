@@ -40,7 +40,7 @@ You’re an Security Analyst that’s been tasked to investigate into a Web Serv
 
 It’s been some time since you’ve used Microsoft’s Azure Log Analytics, you’re thinking you should refresh yourself before investigating.
 
-[Skip Refresher Course](#### Starting the Investigation)
+[Skip Refresher Course](#Starting-the-Investigation)
 #### Refresher Course
 
 1. Start by pulling everything from "ProtectionStatus" table from the AntiMalware Catagory 
