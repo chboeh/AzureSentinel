@@ -44,7 +44,7 @@ It’s been some time since you’ve used Microsoft’s Azure Log Analytics, you
 [Skip Refresher Course](#Starting-the-Investigation)
 #### Refresher Course
 
-1. Start by pulling everything from "ProtectionStatus" table from the AntiMalware Catagory 
+1. Start by pulling everything from "ProtectionStatus" table from the AntiMalware Category 
 
 [Anwser](Answers/KQLRefresher_1.md)
 
