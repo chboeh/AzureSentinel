@@ -50,6 +50,8 @@ It’s been some time since you’ve used Microsoft’s Azure Log Analytics, you
 
 2. The results are a little over whelming, take it down to a sample set of data. We're going to take it down to 10 
 
+>Tip : Hints offer an example of something you'll need to accomplish the query
+
 [Hint](https://docs.microsoft.com/en-us/azure/kusto/query/takeoperator)  
 [Anwser](Answers/KQLRefresher_2.md)  
 
@@ -60,7 +62,7 @@ It’s been some time since you’ve used Microsoft’s Azure Log Analytics, you
 [Anwser](Answers/KQLRefresher_3.md)    
 
 
-4. Remove your limiters; Within the "ProtectionStatus" table, search for "Contoso" then "Cotoso*"
+4. Remove your limiters; Within the "ProtectionStatus" table, search for "Contoso" then "Contoso*"
 > TIP: this can be done in more than one way
 
 [Hint](https://docs.microsoft.com/en-us/azure/kusto/query/searchoperator)    
