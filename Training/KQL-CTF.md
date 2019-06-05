@@ -118,15 +118,15 @@ Based on the "case" you’ve been provided, you know the following facts
 [Anwser](Answers/KQLInvestigation_5.md)
 
 Questions: 
- 1. Which tables are on the top 3 count list?
+ A. Which tables 3 tables have the highest count?
 
 [Anwser](Answers/KQLInvestigation_5_A.md)
 
- 2. Which tables are on the bottom 3 count list?
+ B. Which tables 3 tables have the lowest count?
 
  [Anwser](Answers/KQLInvestigation_5_B.md)
 
- 3. Can you export the data to PowerBI?
+ C. Can you export the data to PowerBI?
 
  [Answer](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/powerbi#export-query)
 
