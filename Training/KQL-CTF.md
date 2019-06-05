@@ -130,9 +130,9 @@ Based on the "case" you’ve been provided, you know the following facts
 
  [Answer](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/powerbi#export-query)
 
->Need to know answer *two* to proceed forward
+>Need to know answer *B* to proceed forward
 
-6. From your discovery of creating the chart, you noticed a small amount of detections. Investigate into the detections of the "ContosoAppSrv1"
+6. From your discovery of creating the chart, you noticed a small amount of SecurityDetections. Investigate into the detections of the "ContosoAppSrv1"
 >Note:You'll need to keep the 1 month time window
 
 [Answer](Answers/KQLInvestigation_6.md)
