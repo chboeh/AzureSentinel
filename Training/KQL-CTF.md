@@ -117,7 +117,6 @@ Based on the "case" you’ve been provided, you know the following facts
 [Hint](https://docs.microsoft.com/en-us/azure/kusto/query/summarizeoperator)  
 [Anwser](Answers/KQLInvestigation_5.md)
 
-Questions: 
  A. Which tables 3 tables have the highest count?
 
 [Anwser](Answers/KQLInvestigation_5_A.md)
