@@ -126,6 +126,7 @@ Based on the "case" you’ve been provided, you know the following facts
  [Anwser](Answers/KQLInvestigation_5_B.md)
 
  C. Can you export the data to PowerBI?
+ >Only visuals are possible for #C
 
  [Answer](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/powerbi#export-query)
 
