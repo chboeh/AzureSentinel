@@ -1,1 +1,2 @@
-![Test] (Training/Pictures/cloud-management-secure-subscription-settings.gif)
+![Test](Pictures/cloud-management-secure-subscription-settings.gif)
+
